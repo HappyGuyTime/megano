@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "megano"
+version = "0.1.0"
+description = "marketplace"
+authors = ["Azamat <1210044@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^4.2.7"
+djangorestframework = "^3.14.0"
+django-filter = "^23.3"
+pillow = "^10.1.0"
+gunicorn = "^21.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+target-version = ['py310']
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[isort]
+line_length = 90
+lines_after_imports = 2
+skip = "__init__.py"
+
+[flake8]
+max-line-length = 90
+exclude = "venv,.git,__pycache__,__init__.py"

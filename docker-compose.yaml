@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  megano:
+    image: megano_app
+    container_name: megano
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command:
+      - gunicorn
+      - config.wsgi:application
+      - --bind
+      - 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    restart: always
+    volumes:
+      - ./db:/megano/db
