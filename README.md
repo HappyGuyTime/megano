@@ -1,8 +1,7 @@
-# MEGANO Marketplace
 ![image](./frontend/static/frontend/assets/img/logo.png)
 
-MEGANO is a marketplace project built with Django and Django REST framework. 
-It allows users to browse and purchase products across various categories.
+# MEGANO is a marketplace project built with Django and Django REST framework. 
+# It allows users to browse and purchase products across various categories.
 
 ## Installation
 
