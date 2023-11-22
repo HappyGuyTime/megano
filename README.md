@@ -1,7 +1,7 @@
 ![image](./frontend/static/frontend/assets/img/logo.png)
 
-# MEGANO is a marketplace project built with Django and Django REST framework. 
-# It allows users to browse and purchase products across various categories.
+# MEGANO is a marketplace project built with Django and Django REST framework.
+It allows users to browse and purchase products across various categories.
 
 ## Installation
 
@@ -40,6 +40,13 @@ To run the project locally using Docker Compose, follow these steps:
     ```
 
 6. The development server should now be running. Open your web browser and navigate to [http://localhost:8000/](http://localhost:8000/) to access the project.
+
+ 7. If you are deploying to a server and want to access the application using its IP address, make sure to add the IP address to the `ALLOWED_HOSTS` list in the `settings.py` file of the Django project:
+
+    ```python
+    # config/settings.py
+    ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'your_server_ip']
+    ```
 
 ## Dependencies
 
