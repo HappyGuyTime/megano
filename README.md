@@ -1,6 +1,8 @@
 # MEGANO Marketplace
 ![image](./frontend/static/frontend/assets/img/logo.png)
-MEGANO is a marketplace project built with Django and Django REST framework. It allows users to browse and purchase products across various categories.
+
+MEGANO is a marketplace project built with Django and Django REST framework. 
+It allows users to browse and purchase products across various categories.
 
 ## Installation
 
@@ -9,7 +11,7 @@ To run the project locally using Docker Compose, follow these steps:
 1. Clone the repository to your local machine.
 
     ```bash
-    git clone https://gitlab.skillbox.ru/azamat_baltaev/megano.git
+    git clone https://github.com/HappyGuyTime/megano.git
     cd megano
     ```
 
@@ -44,20 +46,20 @@ To run the project locally using Docker Compose, follow these steps:
 
 MEGANO project uses the following dependencies:
 
-- ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/240px-Python-logo-notext.svg.png) Python
-- ![Django](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/320px-Django_logo.svg.png) Django
-- ![Django REST framework](https://www.django-rest-framework.org/img/logo.png) Django REST framework
-- ![Pillow](https://pillow.readthedocs.io/en/stable/_static/pillow.png) Pillow
-- ![Gunicorn](https://gunicorn.org/images/logo.jpg) Gunicorn
-- ![django-filter](https://github.com/carltongibson/django-filter/raw/main/docs/_static/django-filter-logo.png) Django-filter
+- Python
+- Django
+- Django REST framework
+- Pillow
+- Gunicorn
+- Django-filter
 
 ## Development Tools
 
 The project also includes several development tools for code formatting and linting:
 
-- ![Black](https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png) Black
-- ![Flake8](https://gitlab.com/pycqa/flake8/-/raw/main/docs/_static/flake8.svg) Flake8
-- ![isort](https://raw.githubusercontent.com/PyCQA/isort/main/docs/_static/isort-logo.png) Isort
+- Black
+- Flake8
+- Isort
 
 You can find the specific versions in the pyproject.toml file.
 
